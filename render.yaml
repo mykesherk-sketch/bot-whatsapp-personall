@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: bot-whatsapp-personal
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: node bot.js
+    autoDeploy: true
+    envVars:
+      NODE_VERSION: 18
